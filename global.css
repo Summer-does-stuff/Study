@@ -1,0 +1,58 @@
+
+/*font- IBM Plex Sans*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+
+/*icon-Google Material*/
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+
+/*html 기본 속성 리셋*/
+@import "./reset.css";
+
+/*시맨틱 컬러 (배리어블)*/
+@import "./variable.css";
+
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: var(--bgColor);
+    color: white;
+}
+
+
+h1{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+input,button{
+    border: none;
+    outline: none;
+    appearance: none;
+}
+
+
+
+*{
+    box-sizing: border-box;
+
+    /*모든 요소를 화면 안에 포함 시킴
+
+    *는 모든 태그에 적용한다는 뜻. Box-sizing은 박스 크기를
+    계산할 때, 어떤 것을 기준으로 할지 정하는 속성.
+    Border-box는 테두리를 기준으로 크기를 정하는 기능.
+    이렇게 설정해주어야 요소가 앱 화면을 벗어나지 않을 수 있음
+    지금 당장은 안적어도 큰 문제가 없어보이지만
+    차후 오류가 나는 것 방지*/
+}
+
+
+
