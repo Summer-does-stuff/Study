@@ -1,0 +1,352 @@
+
+@import "./global.css";
+
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+
+h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+/*tabs*/
+
+
+
+.tabs{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 2rem;
+}
+
+.tab__left, .tab__right{
+    background-color:yellowgreen;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tab__left{
+    border-radius: 8px 0px 0px 8px;
+}
+
+.tab__right{
+    border-radius: 0px 8px 8px 0px;
+}
+
+#button__left{
+    z-index: 2;
+}
+
+
+
+
+#button__left, #button__right{
+background-color: rgba(0,0,0,0);
+color: white;
+font-size:1rem;}
+
+
+#tab__bg{
+    position: absolute;
+    background-color:black;
+    border-radius: 7px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    z-index: 1;
+
+}
+
+
+
+
+/*popular now*/
+
+.popular{
+    margin: 2rem;
+    margin-right: 0rem;
+    margin-top: 3rem;
+}
+
+
+.popular p{
+    opacity: 70%;
+}
+
+.popular__cardContainer{
+    margin-top: 20px;
+}
+
+.popular__cardContainer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#popular__card01, #popular__card02, #popular__card03 {
+   height: 420px;
+   width: 300px;
+   border: solid yellowgreen 4px;
+   border-radius: 12px;
+   margin-right: 20px;
+   margin-bottom: 8px;
+   flex-shrink: 0;
+   position: relative;
+
+}
+
+.popular__card__title{
+    border: 1px solid yellowgreen;
+    width: 160px;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.popular__card__buttons{
+border: 1px yellowgreen solid;
+position: absolute;
+bottom: calc(0% + 24px);
+right: calc(0% + 24px);
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+.popular__card__buttons__share{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(104, 205, 50, 0.15);
+    border-radius: 50%;
+}
+
+.popular__card__buttons__want{
+    width: 88px;
+    height: 40px;
+    background-color: rgba(104, 205, 50, 0.15);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    color: yellowgreen;
+}
+
+/*Get Started*/
+
+.start{
+   margin: 2rem;
+   margin-top: 3rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.startBox{
+    width: 100%;
+}
+
+.start ul{
+list-style: none;
+border: 3px greenyellow solid;
+border-radius: 12px;
+margin-top: 1.4rem;
+}
+
+.start li{
+    display: grid;
+    grid-template-columns:100px 1fr 80px;
+    margin-bottom: 20px;
+}
+
+.start__graph{
+    width: 100px;
+    height: 100px;
+    border: 1px solid yellowgreen;;
+    position: relative;
+   
+}
+
+.start__graph::after{
+    content: "";
+    width: 48px;
+    height: 48px;
+    border: solid yellowgreen 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+}
+
+.popular__separator{
+    border-bottom: 1px solid yellowgreen;
+    width: calc(100% - 100px);
+    transform: translateX(100px);
+    opacity: 30%;
+}
+
+
+
+
+.start__title{
+    border: 1px yellowgreen solid;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.start__drop{
+    border: 1px yellowgreen solid;
+}
+
+.start p{
+    opacity: 70%;
+}
+
+
+
+
+/*trailers*/
+
+.trailers{
+    margin: 2rem;
+    margin-right: 0px;
+}
+
+.trailerContainer{
+    width: 100%;
+    margin-top:1.4rem;
+}
+
+.trailers ul{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+
+
+.trailer__01,.trailer__02,.trailer__03{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    height: 180px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+
+.trailer__image{
+    border: 1px solid yellowgreen;
+    width: 100%;
+    height: 128px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer__image::before{
+    content: "";
+    width: 56px;
+    height: 56px;
+    background-color:rgba(104,205,50,0.2);
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.trailer__image::after{
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid yellowgreen;
+    margin-left: 4px;
+}
+
+
+
+/*collections*/
+
+.collections{
+    margin: 2rem;
+}
+
+.collections__title{
+    display: flex;
+    flex-direction: row;
+}
+
+.collections h1{
+    display: inline;
+}
+
+.collections__title__tag{
+    padding: 8px 16px;
+    border-radius: 50px;
+    background-color: rgba(104,205,50,0.15);
+    margin-left: 12px;
+}
+
+
+.collection__container{
+    margin-top: 1rem;
+}
+
+.h1__emoji{
+    font-size: 48px;
+    margin-bottom: 80px;
+}
+
+.h2__dimmed{
+    color: rgba(255,255,255,0.5);
+}
+
+.collections li{
+    border: 1px solid yellowgreen;
+    border-radius: 12px;
+    padding: 44px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px
+}
+
+
+
+.collection__button{
+    background-color: rgba(104, 205, 50, 0.2);
+    border-radius: 50px;
+    padding: 12px 16px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+}
+
+
+
